@@ -1,9 +1,9 @@
 resource "aws_elastic_beanstalk_application" "eb_app" {
-  name        = "jaz-eb-app"   #Change this to your name
+  name        = "kh-eb-app"   #Change this to your name
 }
 
 resource "aws_elastic_beanstalk_environment" "eb_env" {
-  name                = "jaz-eb-app-env"   #Change this to your name
+  name                = "kh-eb-app-env"   #Change this to your name
   application         = aws_elastic_beanstalk_application.eb_app.name
   solution_stack_name = "64bit Amazon Linux 2023 v6.1.6 running Node.js 20"
 
